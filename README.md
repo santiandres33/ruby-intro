@@ -1,4 +1,4 @@
-##Ejercicios de Introduccion a Ruby
+###Ejercicios de Introduccion a Ruby
 
 Haz un fork de este repositorio, y luego clonalo a tu computador
 
