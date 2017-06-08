@@ -2,13 +2,13 @@
 
 # Tu solucion abajo
 
-first_name = 'Juan'
-last_name = 'fdsaf'
-age = 2
+first_name = 'Santiago'
+last_name = 'Sarmiento'
+age = 28
 
-name = "Germán"
-name = gets.chomp
-puts "Hola #{name}"
+#name = "Germán"
+#name = gets.chomp
+#puts "Hola #{name}"
 
 # Pruebas NO LAS BORRES
 
@@ -17,6 +17,7 @@ describe 'first_name' do
   it "is defined as a local variable" do
     expect(defined?(first_name)).to eq 'local-variable'
   end
+
 
   it "is a String" do
     expect(first_name).to be_a String
