@@ -2,6 +2,7 @@
 
 # Tu solucion abajo
 
+<<<<<<< HEAD
 first_name = 'Santiago'
 last_name = 'Sarmiento'
 age = 28
@@ -9,6 +10,10 @@ age = 28
 #name = "Germán"
 #name = gets.chomp
 #puts "Hola #{name}"
+=======
+
+first_name = 'local-variable'
+>>>>>>> upstream/master
 
 # Pruebas NO LAS BORRES
 
