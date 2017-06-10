@@ -1,32 +1,23 @@
 # Calculate a Grade
 
 # Tu solucion abajo:
-
-def get_grade(a,b,c, *)
-  average = (a + b + c) / 3
-  if average < 60
-    "F"
-  elsif average >= 60 && < 70
-    "D"
-  elsif average >= 70 && average < 80
-    "C"
-  elsif average >= 80 && average < 90
+def get_grade (prom)
+  if prom >= 90 
+    "A"
+  elsif prom >= 80 
     "B"
+  elsif prom >= 70
+    "C"
+  elsif prom >= 60
+    "D"
   else
-    "A"
-  end
-end
-
-def get_grade(note)
-  if note >= 90
-    "A"
-  elsif note >= 80
-    "B"
-  elsif note >= 70
-    "C"
-  elsif note >= 60
-    "D"
-  elsif note < 60
     "F"
   end
 end
+
+# puts get_grade (95)
+# puts get_grade (5)
+# puts get_grade (60)
+# puts get_grade (75)
+# puts get_grade (85)
+
