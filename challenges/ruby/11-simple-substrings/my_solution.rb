@@ -2,12 +2,13 @@
 
 # Tu solucion abajo:
 
-def welcome(str)
-  if str.include? "CA"
-    return "Welcome to California"
-  else
-    return "You should move to California"
-  end
+def welcome( address )
+	(address.include? "CA") ? "Welcome to California" : "You should move to California"
 end
 
-puts welcome("CA")
+# def welcome( address )
+# 	if address.include? "CA" 
+# 	 "Welcome to California" else
+# 	  "You should move to California" 
+# 	end
+# end
