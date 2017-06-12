@@ -19,6 +19,8 @@ def shortest_string(strings_array)
 	end
 end
 
+#solucion recomendada, ordenar el arrglo por tamaño y seleccion ya sea el prmiero o el ultimo
+
 # # 'cat' is 3 characters long
 # shortest_string(['cat', 'zzzzzzz', 'apples'])  # => "cat"
 
