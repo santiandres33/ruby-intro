@@ -4,6 +4,18 @@
 
 
 
+my_info = {first_name: "Santiago", last_name: "Sarmiento", hometown: "tunja", age: 28}
+
+my_info.each do |l, v|
+  puts v
+end
+# puts my_info[:first_name]
+# puts my_info[:last_name]
+# puts my_info[:hometown]
+# puts my_info[:age]
+
+
+
 # Pruebas NO LAS BORRES
 
 
