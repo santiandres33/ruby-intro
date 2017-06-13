@@ -20,6 +20,15 @@ def shortest_string(strings_array)
 end
 
 #solucion recomendada, ordenar el arrglo por tamaño y seleccion ya sea el prmiero o el ultimo
+# def shortest_string(array)
+#   return nil if array.empty?
+#   array.sort_by! {|x| x.length}
+#   array.first
+# end
+
+# def shortest_string(array)
+#   array.min({|a,b| a.length <=> b.length})
+# end
 
 # # 'cat' is 3 characters long
 # shortest_string(['cat', 'zzzzzzz', 'apples'])  # => "cat"

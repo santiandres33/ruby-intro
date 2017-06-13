@@ -18,21 +18,23 @@
 
 def order(arr, reverse = false)
 	array_ordered = []
-	while !arr.empty?
-		
-		if reverse == true
-			
-			array_ordered.unshift(arr.min)
-			arr.delete(arr.min)
-		elsif reverse == false 
-			
-			array_ordered.push(arr.min) 
-			arr.delete(arr.min)
+	if !arr.empty?
+		arr.each do |elem| 
+
+			if reverse 
+
+				array_ordered = arr.reverse
+			else 
+
+				array_ordered = arr.sort
+			end
+
 		end
-		
+		return array_ordered
 	end
-	return array_ordered
-end 
+end
+
+
 
 puts order([1, 2, 3], true) #=> [3, 2, 1]
 puts ""
