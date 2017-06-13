@@ -1,30 +1,44 @@
 # Pretty Triangle
 
-def print_triangle(arg)
-    array = (1..arg).to_a
-    dot = []
-    array.map do |num|
-        dot.push("*" *  num)
-    end
-    puts dot.join(',')
+
+def print_triangle (num)
+  cont = 0
+  until cont == num
+  cont += 1
+  cont.times { |i| print "*" }
+  # puts "*" * cont
+  puts ""
+  end  
 end
 
 
-# Tu solucion abajo:
 
 
-def print_triangle int1
-  if int1<=0
+# def print_triangle(arg)
+#     array = (1..arg).to_a
+#     dot = []
+#     array.map do |num|
+#         dot.push("*" *  num)
+#     end
+#     puts dot#.join(',')
+# end
 
-   else
-     otro=0
-       while (otro < int1)
-         otro += 1
-         h = Hash.new {|h,k| h[otro] = '*'*otro.to_i}   #=> {}
-         puts h.default(otro)
-       end
-   end
-end
+
+# # Tu solucion abajo:
+
+
+# def print_triangle int1
+#   if int1<=0
+
+#    else
+#      otro=0
+#        while (otro < int1)
+#          otro += 1
+#          h = Hash.new {|h,k| h[otro] = '*'*otro.to_i}   #=> {}
+#          puts h.default(otro)
+#        end
+#    end
+# end
 
 
 
@@ -40,4 +54,6 @@ end
 #     multiplicator +=1
 #   end
 # end
+
+print_triangle(143)
 
