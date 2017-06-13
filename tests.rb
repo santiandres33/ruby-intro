@@ -21,29 +21,34 @@ def order(arr, reverse = false)
 	if !arr.empty?
 		arr.each do |elem| 
 
-			if reverse 
+			if !reverse 
 
-				array_ordered = arr.reverse
-			else 
+				 return arr.sort
+			
+			elsif reverse  
+				a = arr.sort
 
-				array_ordered = arr.sort
+				 return a.reverse
 			end
 
+
 		end
-		return array_ordered
+		
 	end
 end
 
 
 
-puts order([1, 2, 3], true) #=> [3, 2, 1]
-puts ""
-puts order([1, 2, 3], false) #=> [1, 2, 3]
-puts ""
-puts order([5, 2, 1, 3, 4], true) #=> [5, 4, 3, 2, 1]
-puts ""
-puts order([5, 2, 1, 3, 4], false) #=> [1, 2, 3, 4, 5]
-puts ""
-puts order([5, 2, 1, 3, 4]) #=> [1, 2, 3, 4, 5]
-puts ""
-puts order([1, 2, 3, 4, 5]) #=> [1, 2, 3, 4, 5]
+
+
+p order([1, 2, 3, 3], true) #=> [3, 3, 2, 1]
+p ""
+p order([1, 2, 3], false) #=> [1, 2, 3]
+p ""
+p order([5, 2, 1, 3, 4], true) #=> [5, 4, 3, 2, 1]
+p ""
+p order([5, 2, 1, 3, 4], false) #=> [1, 2, 3, 4, 5]
+p ""
+p order([5, 2, 1, 3, 4]) #=> [1, 2, 3, 4, 5]
+p ""
+p order([1, 2, 3, 4, 5], true) #=> [1, 2, 3, 4, 5]
