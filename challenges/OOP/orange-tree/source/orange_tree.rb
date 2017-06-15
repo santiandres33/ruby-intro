@@ -3,26 +3,53 @@ class NoOrangesError < StandardError
 end
 
 class OrangeTree
+
+  def initialize 
+   @height = 0
+   @age = 0
+   @alive = true
+   @oranges = []
+ end
+
+ attr_accessor :height, :age
+
   # Envejeze el arbol
   def age!
+    if @age > 15
+      @alive = false
+    else
+      @age += 1
+      @height += 2 if @height < 20 
+      #((rand(4..7)).times {@oranges << Orange.new(rand(15..20))}) if @age > 4
+      rand(5..9).times {@oranges << Orange.new(rand(15..20))} if @age > 4
+    end
+  end
+
+  def dead?
+    !@alive
   end
 
   # Devuelve true si hay naranjas en el arbol, false si no
   def any_oranges?
+    @oranges.size > 0 ? true : false
   end
 
   # Devuelve una naranja si hay una
   # Dispara un NoOrangesError de lo contrario
   def pick_an_orange!
     raise NoOrangesError, "This tree has no oranges" unless self.any_oranges?
-
     # Logica para sacar naranjas va aca
+    #puts @oranges.size
+    return @oranges.pop
+
   end
 end
 
 class Orange
+  attr_accessor :diameter
   # Crea una naranja con determinado +diameter+
   def initialize(diameter)
+    @diameter = diameter
   end
 end
 
