@@ -177,8 +177,8 @@ class Figure
     @fill = fill
   end
 
-  def to_s
-    "Yo soy .."
+  def to_s #ojo
+    "Yo soy ."
   end
 end
 
@@ -194,8 +194,6 @@ class Square < Figure
     super + " un Cuadrado de lado #{@side}"
   end
 end
-
-
 
 class Circle < Figure
   attr_accessor :radius

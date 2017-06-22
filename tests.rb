@@ -1,10 +1,83 @@
-def create_hash (num1, num2, num3)
-	# hash = Hash.new
-  return h = Hash[temperature: num1, altitude: num2, pressure: num3  ]
+File.open("../example.txt").each do |line|
+	puts line
 end
 
-p create_hash(23, 4500, 234)
-p create_hash(23, 4500, 234) #=> { temperature: 23, altitude: 4500, pressure: 234}
+
+###############
+
+# def is_plate?(str)	
+#      if(/[A-Z]{3}[0-9]{3}/.match(str)) && str.size == 6
+#      	p true
+#      else 
+#      	p false
+#      end
+# end
+
+# # class String
+# #   def numeric?
+# #     Float(self) != nil rescue false
+# #   end
+# # end
+
+
+
+# is_plate?("aasa111") #false
+# is_plate?("") #=> false
+# is_plate?("MVV387") #=> true
+# is_plate?("mvv387") #=> false
+##############
+
+# def maximo(*num)
+# 	max = 0
+# 	num.each do |elem|
+# 		max = elem if elem > max
+# 	end
+# 	return max
+# end
+
+# p maximo(5, 10, 20, 50, 32)
+##############
+# def defaults(h)
+# 	h.map do |key, value| 
+# 		if key != :temperature
+# 			value = 10
+# 		end
+# 		if key != :altitude
+# 			value = 12000
+# 		end
+# 		if key != :pressure
+# 			value = 500
+# 		end
+# 	end
+# end
+
+
+# def defaults(h)
+
+# 	if h.has_key?(:temperature) == false
+# 		h[:temperature] = 10
+# 	end
+
+# 	if h.has_key?(:altitude) == false
+# 		h[:altitude] = 12000
+# 	end
+
+# 	if h.has_key?(:pressure) == false
+# 		h[:pressure] = 500
+# 	end
+# 	 return h
+# end
+
+
+# p defaults({ temperature:30, altitude:234, pressure:1})
+
+# def create_hash (num1, num2, num3)
+# 	# hash = Hash.new
+#   return h = Hash[temperature: num1, altitude: num2, pressure: num3  ]
+# end
+
+# p create_hash(23, 4500, 234)
+# p create_hash(23, 4500, 234) #=> { temperature: 23, altitude: 4500, pressure: 234}
 
 
 ####### def fizz_buzz (num)

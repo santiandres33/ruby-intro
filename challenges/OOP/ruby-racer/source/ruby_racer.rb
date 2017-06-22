@@ -6,6 +6,15 @@ class RubyRacer
     @track2 = Track.new
   end
 
+  def move
+    
+    @track1 = 
+  end
+
+  def rolling_dice
+    dado
+  end
+
   def def_print_game
     @track1.print_track
     @track2.print_track
