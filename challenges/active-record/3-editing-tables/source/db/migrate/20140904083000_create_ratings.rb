@@ -3,7 +3,7 @@ class CreateRatings < ActiveRecord::Migration
     create_table :ratings do |t|
       t.integer :coolness
       t.integer :cuteness
-      t.integer :rater_id
+      t.integer :judge_id
       t.integer :dog_id
 
       t.timestamps
